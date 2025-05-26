@@ -59,6 +59,7 @@ main_packages=(
     xorg-xrandr                # dependency for finding screen size
     pamixer                    # dependency for clicking on waybar tools
     comic-mono                 # font used for swaylock
+    noto-fonts-emoji
 )
 
 
@@ -183,7 +184,7 @@ sudo pacman -Rns --noconfirm dolphin
 # Finishing touches
 sh ~/.config/DJ-hyprland/scripts/symlink.sh
 
-# Setup terminal size and default wallpaper
+# Configure screen size and wallpaper
 sh ~/.config/DJ-hyprland/scripts/monitor.sh
 
 ### Script is done ###

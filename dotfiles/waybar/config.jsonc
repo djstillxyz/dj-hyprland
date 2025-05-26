@@ -158,7 +158,7 @@
     "interval": 300,
     "format": "🇺🇸",
     "tooltip": false,
-    "on-click": "~/.dotfiles/waybar/scripts/flag.sh",
+    "on-click": "~/.config/DJ-hyprland/scripts/flag.sh",
     "signal": 8
   },
     "custom/swaync": {
