@@ -18,5 +18,5 @@ sed -i "s/^indicator-y-position=.*/indicator-y-position=$HALF_HEIGHT/" "$SWAYLOC
 # Apply monitor name to hyprpaper
 ######################################
 HYPRPAPER_CONFIG="$HOME/.dotfiles/hyprland/hyprpaper.conf"
-sed -i "s/MONITOR/$monitor/g" "$config"
+sed -i "s/MONITOR/$monitor/g" "$HYPRPAPER_CONFIG"
 ######################################
