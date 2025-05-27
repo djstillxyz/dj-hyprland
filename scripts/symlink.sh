@@ -13,7 +13,7 @@ ln -s "$home_dir/.dotfiles/starship/starship.toml" "$home_dir/.config/starship.t
 
 # Hyprland
 rm -r "$home_dir/.config/hypr"; mkdir "$home_dir/.config/hypr"
-for file in env_var.conf hyprland.conf xdg-portal-hyprland hyprpaper.conf; do
+for file in env_var.conf hyprland.conf xdg-portal-hyprland hyprpaper.conf hypropacity; do
     ln -s "$home_dir/.dotfiles/hyprland/$file" "$home_dir/.config/hypr/$file"
 done
 

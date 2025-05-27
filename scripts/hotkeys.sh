@@ -20,11 +20,11 @@ if [ -f "$STATE_FILE" ]; then
     rm "$STATE_FILE"
     hyprctl dispatch submap reset
     echo "$(date): Disabling clean mode" >> "$LOGDIR/submap_toggle.log"
-    notify-send "Hyprland" "Clean mode disabled" -t 2000
+    notify-send "Hyprland" "Global Hotkeys Enabled" -t 2000
 else
     # File doesn't exist, clean mode is inactive, turn it on
     touch "$STATE_FILE"
     hyprctl dispatch submap clean
     echo "$(date): Enabling clean mode" >> "$LOGDIR/submap_toggle.log"
-    notify-send "Hyprland" "Clean mode enabled" -t 2000
+    notify-send "Hyprland" "Global Hotkeys Disabled" -t 2000
 fi
