@@ -306,7 +306,7 @@ trough slider:hover {
 .notification-group .notification-group-buttons>button {
     border: 2px solid rgba(213, 196, 161, 0.6); /* Default border */
     background-color: transparent;
-    transition: all 0.2s ease;
+    /*transition: all 1.2s ease;*/
 }
 
 .notification-row .notification-background .close-button:hover,
@@ -316,17 +316,18 @@ trough slider:hover {
     background-color: transparent;
 }
 
-/* Bold text for clear button */
-.notification-row .notification-background .close-button label {
-    font-weight: bold;
-    color: @text; /* Ensure text color matches your theme */
-}
-
 /* If you want to bold all similar buttons (widget close buttons) */
 .widget-title>button label,
 .notification-group .notification-group-buttons>button label {
     font-weight: bold;
 }
+
+.widget-title>button:hover label,
+.notification-group .notification-group-buttons>button:hover label {
+    font-weight: bold;
+    color: @pink;
+}
+
 
 .notification-row .notification-background .notification {
     /* The actual notification */
