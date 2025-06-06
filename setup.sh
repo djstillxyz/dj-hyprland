@@ -38,29 +38,32 @@ base_packages=(
 )
 
 main_packages=(
-    kitty
-    waybar
-    hyprpaper
-    swaylock-effects
-    bemenu-wayland
-    wlogout
+    kitty                      # terminal emulator
+    waybar                     # taskbar (but for wayland)
+    hyprpaper                  # wallpaper manager
+    swaylock-effects           # screenlock program
+    bemenu-wayland             # dynamic window manager (dmenu for wayland)
+    wlogout                    # logout program
     gvfs
     brightnessctl
-    slurp
-    thunar
-    btop
+    grim                       # wayland screenshot utility
+    slurp                      # screen capture program (used alongside grim)
+    thunar                     # file manager
+    tumbler                    # extension for thunar (allows thumbnail previewing)
+    btop                       # system monitoring
     pulsemixer                 # volume mixer
     thunar-archive-plugin      # dependency for thunar
-    starship
-    ttf-jetbrains-mono-nerd
-    fish
-    swaync
-    swaync-widgets-git
+    starship                   # pretty terminal
+    ttf-jetbrains-mono-nerd    # emojis and fonts
+    fish                       # shell
+    swaync                     # notification center / manager
+    swaync-widgets-git         # extension for swaync
     xorg-xrandr                # dependency for finding screen size
     pamixer                    # dependency for clicking on waybar tools
     comic-mono                 # font used for swaylock
-    noto-fonts-emoji
-    file-roller
+    noto-fonts-emoji           # emoji font
+    file-roller                # archive manager (unzipping files)
+    aspell-en                  # english dictionary (spell checking in emacs)
 )
 
 
