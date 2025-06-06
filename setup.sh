@@ -60,6 +60,7 @@ main_packages=(
     pamixer                    # dependency for clicking on waybar tools
     comic-mono                 # font used for swaylock
     noto-fonts-emoji
+    file-roller
 )
 
 
