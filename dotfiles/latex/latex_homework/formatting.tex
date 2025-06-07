@@ -1,0 +1,80 @@
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{lipsum}
+\usepackage[margin=0.8in,includefoot]{geometry}
+\usepackage{booktabs}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\usepackage{framed}
+\usepackage{xcolor}
+% Table of contents package removed
+\colorlet{shadecolor}{orange!15}
+% Header & Footer Stuff
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% HEADER CUSTOMIZATION
+\renewcommand{\sectionmark}[1]{\markright{\textsf{\S\arabic{section} #1}}}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}}
+% Theorem numbering
+% Custom theorem style for homework problems
+\newtheoremstyle{homeworkstyle}% name
+  {\topsep}   % ⟶ Space above
+  {\topsep}   % ⟶ Space below
+  {\normalfont}  % ⟶ Body font
+  {}          % ⟶ Indent amount
+  {\bfseries} % ⟶ Theorem head font
+  {}          % ⟶ No punctuation after head (we’ll add it manually)
+  { }         % ⟶ Space after theorem head
+  {\thmname{#1}~\thmnumber{#2.}\thmnote{~#3}\vspace{\baselineskip}} % ⟶ Fixes punctuation placement
+
+\theoremstyle{homeworkstyle}
+\newtheorem{homework}{Problem}
+\renewcommand{\thehomework}{\arabic{homework}}
+
+\newenvironment{hwproblem}[1][]{
+  \begin{shaded}
+  \begin{homework}[#1]
+}{
+  \end{homework}
+  \end{shaded}
+}
+
+% TABLE OF CONTENTS CUSTOMIZATION REMOVED
+
+\linespread{1.03}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{2}
+% TOC depth setting removed
+
+% Plain style redefinition simplified (removed TOC reference)
+\fancypagestyle{plain}{%
+  \fancyhf{} % Clear all headers/footers
+  \fancyhead[R]{\textbf{\thepage}}
+  \renewcommand{\headrulewidth}{0.4pt} % Keep the header rule
+}
+% Section numbering - § directly attached to number
+\renewcommand{\thesection}{\S\arabic{section}.} % No space after §
+% Section formatting
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont\large\bfseries}}
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.35em}} % default is 1em, so we reduce it
+\makeatother
+% ToC numberline formatting removed
+
+% Modified firstpage style to show date instead of page number
+\fancypagestyle{firstpage}{%
+  \lhead{\authoremail}
+  \rhead{\notedate} % Changed from \thepage to \today to show current date
+}
+\newcommand{\maketitlepage}{
+  \begin{center}
+    {\fontsize{24}{24} \selectfont \notestitle}
+    \vskip 8pt
+    {\fontsize{14}{14} \selectfont \rmfamily \it \authorname}
+    \vskip 8pt
+    \hrulefill
+  \end{center}
+}

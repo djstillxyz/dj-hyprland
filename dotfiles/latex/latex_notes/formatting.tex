@@ -1,0 +1,117 @@
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{lipsum}
+\usepackage[paperwidth=7in, paperheight=10in, top=1in, bottom=0.75in, outer=0.75in, inner=1in]{geometry}
+\usepackage{booktabs}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage{tocloft}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{mathrsfs}
+
+
+\colorlet{shadecolor}{orange!15}
+
+\counterwithout{section}{chapter}
+
+% Contents
+\setlength{\cftbeforetoctitleskip}{-1em} % Move exactly to top
+\renewcommand{\contentsname}{\hspace{0pt plus 0.9fil}\bfseries\Large CONTENTS} % Center Contents
+
+% Chapters
+\renewcommand{\cftchappresnum}{} % Optional: Adjust spacing if needed
+\renewcommand{\cftchapaftersnum}{.} % Keep the dot after Roman numeral (optional)
+\renewcommand{\cftchapleader}{} % Remove the dots (leaders)
+\renewcommand{\cftchapfont}{\hspace{0pt plus 1fil}\Large} % Your existing chapter font
+\renewcommand{\cftchappagefont}{} % Remove page number formatting
+\cftpagenumbersoff{chapter} % This disables page numbers for chapters
+
+% Chapters in text and new chapter white space
+\titleformat{\chapter}[display]
+  {\normalfont\centering\Large\bfseries} % formatting
+  {\MakeUppercase\chaptername\ \thechapter} % label
+  {10pt} % space between label and title
+  {\LARGE} % before-code
+\titlespacing*{\chapter}{0pt}{-20pt}{30pt} % {left}{before-sep}{after-sep}
+
+% Adjust section entries back to left-aligned (optional)
+\renewcommand{\cftsecindent}{0pt}
+\renewcommand{\cftsecfont}{}
+
+\renewcommand{\thechapter}{\Roman{chapter}}
+
+% Subsection styling
+\renewcommand{\cftsubsecindent}{1.5em}
+\renewcommand{\cftsubsecfont}{}
+
+% Header & Footer Stuff
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% HEADER CUSTOMIZATION
+\renewcommand{\sectionmark}[1]{\markright{\textsf{\S\arabic{section} #1}}}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}}
+
+% Theorem numbering
+\newtheorem{theorem}{Theorem}[section]
+\renewcommand{\thetheorem}{\thesection\arabic{theorem}}
+
+\newenvironment{theo}
+  {\begin{shaded}\begin{theorem}}
+  {\end{theorem}\end{shaded}}
+
+\fancyhead[L]{\nouppercase{\rightmark}}
+\fancyhead[R]{\textbf{\thepage}}
+
+% EQUATIONS
+\numberwithin{equation}{section}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+
+% TABLE OF CONTENTS CUSTOMIZATION
+\linespread{1.03}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setlength{\cftbeforesecskip}{0.2em}
+
+% Redefine plain style to include headers for TOC page
+\fancypagestyle{plain}{%
+  \fancyhf{} % Clear all headers/footers
+  \fancyhead[L]{\nouppercase{Table of Contents}}
+  \fancyhead[R]{\textbf{\thepage}}
+  \renewcommand{\headrulewidth}{0.4pt} % Keep the header rule
+}
+
+% Section numbering - § directly attached to number
+\renewcommand{\thesection}{\S\arabic{section}.} % No space after §
+
+% Section formatting
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont\large\bfseries}}
+
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.35em}} % default is 1em, so we reduce it
+\makeatother
+
+% ToC formatting - modify numberline to include §
+\renewcommand{\numberline}[1]{#1\hspace{0.5em}} % Add § and proper spacing
+
+\fancypagestyle{firstpage}{%
+  \lhead{\authoremail}
+  \rhead{\textbf{\thepage}}
+}
+\newcommand{\maketitlepage}{
+  \begin{center}
+    {\fontsize{16}{16} \selectfont \notesheader}
+    \vskip 6pt
+    {\fontsize{24}{24} \selectfont \notestitle}
+    \vskip 8pt
+    {\fontsize{14}{14} \selectfont \rmfamily \it \authorname}
+    \vskip 8pt
+    \hrulefill
+  \end{center}
+}

@@ -1,0 +1,10 @@
+#+TITLE: YOUR-TITLE
+#+AUTHOR: YOUR-NAME
+#+LaTeX: \newpage
+#+LaTeX_HEADER: \usepackage[paperwidth=6in, paperheight=9in, top=0.6in, bottom=0.55in, outer=0.6in, inner=0.75in]{geometry}
+#+LANGUAGE: en
+#+EXPORT_FILE_NAME: YOUR-BOOK-NAME.pdf
+
+* YOUR-FIRST-CHAPTER
+
+YOUR-FIRST-TEXT...
