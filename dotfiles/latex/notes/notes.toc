@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {\S 1.}YOUR-FIRST-SECTION}{4}{section.0.1}%
+\contentsline {section}{\numberline {\S 2.}Another section}{4}{section.0.2}%
