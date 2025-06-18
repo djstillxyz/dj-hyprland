@@ -64,6 +64,7 @@ main_packages=(
     noto-fonts-emoji           # emoji font
     file-roller                # archive manager (unzipping files)
     aspell-en                  # english dictionary (spell checking in emacs)
+    basedpyright               # lsp for emacs (better fork of pyright)
 )
 
 
