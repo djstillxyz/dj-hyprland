@@ -65,6 +65,7 @@ main_packages=(
     engrampa                   # archive manager (unzipping files, fork of file-roller)
     aspell-en                  # english dictionary (spell checking in emacs)
     basedpyright               # lsp for emacs (better fork of pyright)
+    calcurse                   # calendar
 )
 
 
