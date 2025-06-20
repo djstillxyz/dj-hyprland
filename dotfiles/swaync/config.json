@@ -76,8 +76,8 @@
                     "command": "swaync-widgets vpn"
                 },
                 {
-                    "label": "  Picker",
-                    "command": "/home/tohru/.config/hypr/scripts/hyprpicker.sh"
+                    "label": "  Wallpaper",
+                    "command": "~/.config/DJ-hyprland/scripts/wallpaper.sh"
                 },
                 {
                     "label": "  Screenshot",
