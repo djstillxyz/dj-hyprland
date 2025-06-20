@@ -62,7 +62,7 @@ main_packages=(
     pamixer                    # dependency for clicking on waybar tools
     comic-mono                 # font used for swaylock
     noto-fonts-emoji           # emoji font
-    file-roller                # archive manager (unzipping files)
+    engrampa                   # archive manager (unzipping files, fork of file-roller)
     aspell-en                  # english dictionary (spell checking in emacs)
     basedpyright               # lsp for emacs (better fork of pyright)
 )
@@ -184,7 +184,7 @@ gsettings set org.gnome.desktop.interface icon-theme "Zafiro-Nord-Dark-Grey"
 #--------------------------------------------------------------------------------------------------#
 
 # Uninstall dolphin and related packages
-sudo pacman -Rns --noconfirm dolphin
+sudo pacman -Rns --noconfirm dolphin wofi vim htop dunst
 
 # Finishing touches
 sh ~/.config/DJ-hyprland/scripts/symlink.sh
