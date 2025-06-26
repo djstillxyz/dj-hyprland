@@ -1,6 +1,6 @@
 #!/bin/bash
 
-directory=~/git/private/DJ-hyprland/dotfiles/extras/wallpapers
+directory=~/.config/DJ-hyprland/dotfiles/extras/wallpapers
 monitor=$(hyprctl monitors | grep Monitor | awk '{print $2}')
 
 if [ -d "$directory" ]; then

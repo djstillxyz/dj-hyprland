@@ -4,6 +4,7 @@ home_dir="/home/$(whoami)"
 
 # Fish
 rm -r "$home_dir/.config/fish"; mkdir "$home_dir/.config/fish"
+rm -r "$home_dir/.config/fish/functions"; mkdir "$home_dir/.config/fish/functions"
 ln -s "$home_dir/.dotfiles/fish/config.fish" "$home_dir/.config/fish/config.fish"
 ln -s "$home_dir/.dotfiles/fish/fish_variables" "$home_dir/.config/fish/fish_variables"
 ln -s "$home_dir/.dotfiles/fish/functions/fish_prompt.fish" "$home_dir/.config/fish/functions/fish_prompt.fish"

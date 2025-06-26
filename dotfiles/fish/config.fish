@@ -3,3 +3,7 @@ if status is-interactive
 end
 
 set fish_greeting ''
+
+function fish_mode_prompt
+    # Empty function to disable mode prompt
+end
