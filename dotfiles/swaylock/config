@@ -1,7 +1,7 @@
 daemonize
 show-failed-attempts
 clock
-image=~/.dotfiles/extras/wallpapers/1.jpg
+image=~/.dotfiles/extras/wallpapers/3.jpg
 effect-vignette=0.4:0.4
 effect-blur=10x5
 color=242d1d
