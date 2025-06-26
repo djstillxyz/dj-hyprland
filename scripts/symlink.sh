@@ -9,6 +9,10 @@ ln -s "$home_dir/.dotfiles/fish/fish_variables" "$home_dir/.config/fish/fish_var
 ln -s "$home_dir/.dotfiles/fish/functions/fish_prompt.fish" "$home_dir/.config/fish/functions/fish_prompt.fish"
 ln -s "$home_dir/.dotfiles/fish/functions/fish_right_prompt.fish" "$home_dir/.config/fish/functions/fish_right_prompt.fish"
 
+# Rofi
+rm -r "$home_dir/.config/rofi"; mkdir "$home_dir/.config/rofi"
+ln -s "$home_dir/.dotfiles/rofi/config.rasi" "$home_dir/.config/rofi/config.rasi"
+
 # Hyprland
 rm -r "$home_dir/.config/hypr"; mkdir "$home_dir/.config/hypr"
 for file in env_var.conf hyprland.conf xdg-portal-hyprland hyprpaper.conf hypropacity; do

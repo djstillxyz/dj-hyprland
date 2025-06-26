@@ -42,7 +42,6 @@ main_packages=(
     waybar                     # taskbar (but for wayland)
     hyprpaper                  # wallpaper manager
     swaylock-effects           # screenlock program
-    bemenu-wayland             # dynamic window manager (dmenu for wayland)
     wlogout                    # logout program
     gvfs
     brightnessctl
@@ -65,6 +64,7 @@ main_packages=(
     aspell-en                  # english dictionary (spell checking in emacs)
     basedpyright               # lsp for emacs (better fork of pyright)
     calcurse                   # calendar
+    rofi-wayland               # dynamic window manager
 )
 
 
