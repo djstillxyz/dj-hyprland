@@ -6,10 +6,8 @@ home_dir="/home/$(whoami)"
 rm -r "$home_dir/.config/fish"; mkdir "$home_dir/.config/fish"
 ln -s "$home_dir/.dotfiles/fish/config.fish" "$home_dir/.config/fish/config.fish"
 ln -s "$home_dir/.dotfiles/fish/fish_variables" "$home_dir/.config/fish/fish_variables"
-
-# Starship
-rm "$home_dir/.config/starship.toml"
-ln -s "$home_dir/.dotfiles/starship/starship.toml" "$home_dir/.config/starship.toml"
+ln -s "$home_dir/.dotfiles/fish/functions/fish_prompt.fish" "$home_dir/.config/fish/functions/fish_prompt.fish"
+ln -s "$home_dir/.dotfiles/fish/functions/fish_right_prompt.fish" "$home_dir/.config/fish/functions/fish_right_prompt.fish"
 
 # Hyprland
 rm -r "$home_dir/.config/hypr"; mkdir "$home_dir/.config/hypr"

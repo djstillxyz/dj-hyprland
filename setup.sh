@@ -53,7 +53,6 @@ main_packages=(
     btop                       # system monitoring
     pulsemixer                 # volume mixer
     thunar-archive-plugin      # dependency for thunar
-    starship                   # pretty terminal
     ttf-jetbrains-mono-nerd    # emojis and fonts
     fish                       # shell
     swaync                     # notification center / manager
