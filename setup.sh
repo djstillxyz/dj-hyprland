@@ -65,6 +65,9 @@ main_packages=(
     basedpyright               # lsp for emacs (better fork of pyright)
     calcurse                   # calendar
     rofi-wayland               # dynamic window manager
+    toipe                      # typeracer in terminal
+    wf-recorder                # lightweight screen-recorder
+    impala                     # minimal wifi interface
 )
 
 

@@ -60,16 +60,16 @@
         "buttons-grid": {
             "actions": [
                 {
-                    "label": "   Connected",
-                    "command": "swaync-widgets wifi"
+                    "label": " Wi-Fi",
+                    "command": "kitty impala"
                 },
                 {
-                    "label": "󰕾  Mute",
-                    "command": "swaync-widgets mute"
+                    "label": " Speedtest",
+                    "command": "kitty toipe"
                 },
                 {
-                    "label": "󰂲  Bluetooth",
-                    "command": "swaync-widgets bluetooth"
+                    "label": "󰃼 ScreenRecord",
+                    "command": "~/.config/DJ-hyprland/scripts/screenrecord-wrapper.sh"
                 },
                 {
                     "label": "  VPN",
@@ -80,8 +80,8 @@
                     "command": "~/.config/DJ-hyprland/scripts/wallpaper.sh"
                 },
                 {
-                    "label": "  Screenshot",
-                    "command": "/home/tohru/.config/hypr/scripts/screenshot.sh"
+                    "label": " ColorPicker",
+                    "command": "~/.config/DJ-hyprland/scripts/colorpicker.sh"
                 }
             ]
         }
