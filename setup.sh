@@ -68,6 +68,7 @@ main_packages=(
     toipe                      # typeracer in terminal
     wf-recorder                # lightweight screen-recorder
     impala                     # minimal wifi interface
+    hyprpicker                 # color picker
 )
 
 
