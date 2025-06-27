@@ -206,6 +206,14 @@ tooltip label {
   animation-direction: alternate;
 }
 
+#battery.charging {
+  animation-name: blink-green;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 #clock {
   font-weight: bold;
   padding: 4px 2px 2px 2px;
@@ -272,6 +280,13 @@ tooltip label {
 @keyframes blink-yellow {
   to {
     background-color: #cf9022;
+    color: @foreground;
+  }
+}
+
+@keyframes blink-green {
+  to {
+    background-color: #b8bb26;
     color: @foreground;
   }
 }

@@ -44,7 +44,7 @@ main_packages=(
     swaylock-effects           # screenlock program
     wlogout                    # logout program
     gvfs
-    brightnessctl
+    brightnessctl              # program to adjust screen brightness
     grim                       # wayland screenshot utility
     slurp                      # screen capture program (used alongside grim)
     thunar                     # file manager
@@ -191,6 +191,8 @@ sh ~/.config/DJ-hyprland/scripts/symlink.sh
 
 # Configure screen size and wallpaper
 sh ~/.config/DJ-hyprland/scripts/monitor.sh
+
+sh ~/.config/DJ-hyprland/scripts/timezone.sh
 
 ### Script is done ###
 echo -e "$NOTE - Script had completed, reboot your system now!"
