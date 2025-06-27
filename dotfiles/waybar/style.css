@@ -286,7 +286,7 @@ tooltip label {
 
 @keyframes blink-green {
   to {
-    background-color: #b8bb26;
+    background-color: #8ec07c;
     color: @foreground;
   }
 }

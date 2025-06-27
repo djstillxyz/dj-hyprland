@@ -134,7 +134,7 @@
       "critical": 15
     },
     "format": "{icon}",
-    "format-charging": "<b>{icon} </b>",
+    "format-charging": "{icon}",
     "format-full": "<span color='#82A55F'><b>{icon}</b></span>",
     "format-icons": [
       "󰁻",
