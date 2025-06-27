@@ -47,11 +47,9 @@ main_packages=(
     brightnessctl              # program to adjust screen brightness
     grim                       # wayland screenshot utility
     slurp                      # screen capture program (used alongside grim)
-    thunar                     # file manager
-    tumbler                    # extension for thunar (allows thumbnail previewing)
+    yazi                       # TUI file manager
     btop                       # system monitoring
     pulsemixer                 # volume mixer
-    thunar-archive-plugin      # dependency for thunar
     ttf-jetbrains-mono-nerd    # emojis and fonts
     fish                       # shell
     swaync                     # notification center / manager
@@ -69,6 +67,7 @@ main_packages=(
     wf-recorder                # lightweight screen-recorder
     impala                     # minimal wifi interface
     hyprpicker                 # color picker
+    mpv                        # video player
 )
 
 
