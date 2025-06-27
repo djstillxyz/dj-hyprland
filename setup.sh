@@ -68,6 +68,7 @@ main_packages=(
     impala                     # minimal wifi interface
     hyprpicker                 # color picker
     mpv                        # video player
+    vim                        # text editor
 )
 
 
