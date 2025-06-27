@@ -1,3 +1,4 @@
 #!/bin/bash
 
-grim -g "$(slurp)" ~/screenshot.png
+timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
+grim -g "$(slurp)" ~/screenshot_$timestamp.png
