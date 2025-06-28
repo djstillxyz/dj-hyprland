@@ -187,6 +187,65 @@ gsettings set org.gnome.desktop.interface icon-theme "Zafiro-Nord-Dark-Grey"
 
 #--------------------------------------------------------------------------------------------------#
 
+# Miniconda3
+##############################################################
+mkdir -p ~/git/public/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/git/public/miniconda3/miniconda.sh
+bash ~/git/public/miniconda3/miniconda.sh -b -u -p ~/git/public/miniconda3
+rm ~/git/public/miniconda3/miniconda.sh
+
+sh ~/git/public/miniconda3/bin/conda init --all
+
+sh source ~/.dotfiles/fish/config.fish
+###############################################################
+
+# Emacs
+###############################################################
+cd ~/git/public
+
+# emacs core dependencies
+sudo pacman -S cmake gd libotf m17n-lib tree-sitter libgccjit
+
+# other dependencies, can maybe be lumped in with above
+sudo pacman -S libgccjit libgccjit-devel gtk3 gtk3-devel gtk4 gtk4-devel libtree-sitter libtree-sitter-devel \
+     jansson-devel libvterm-devel webkit2gtk5.0-devel gnutls-devel
+
+# dependencies for pdf-tools
+sudo pacman -S poppler poppler-glib
+
+git clone --single-branch --branch=emacs-30 git://git.sv.gnu.org/emacs.git emacs-30
+
+cd emacs-30/
+
+sh autogen.sh
+
+./configure --without-compress-install \
+            --with-pgtk \
+            --without-libotf \
+            --with-x-toolkit=no \
+            --with-cairo \
+            --with-native-compilation=aot \
+            --with-tree-sitter \
+            --with-mailutils \
+            --with-rsvg \
+            CFLAGS="-O2 -mtune=native -march=native -fomit-frame-pointer" \
+            --prefix=/usr/local
+
+make -j16
+
+make check
+
+sudo make install
+###############################################################
+
+# Doom Emacs
+###############################################################
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
+sudo rm -r ~/.emacs.d
+doom sync
+###############################################################
+
 # Uninstall dolphin and related packages
 sudo pacman -Rns --noconfirm dolphin wofi nano htop dunst
 
