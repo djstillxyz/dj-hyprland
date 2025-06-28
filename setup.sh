@@ -38,6 +38,7 @@ base_packages=(
 )
 
 main_packages=(
+    mpv                        # video player
     kitty                      # terminal emulator
     waybar                     # taskbar (but for wayland)
     hyprpaper                  # wallpaper manager
@@ -67,7 +68,6 @@ main_packages=(
     wf-recorder                # lightweight screen-recorder
     impala                     # minimal wifi interface
     hyprpicker                 # color picker
-    mpv                        # video player
     vim                        # text editor
 )
 
@@ -188,7 +188,7 @@ gsettings set org.gnome.desktop.interface icon-theme "Zafiro-Nord-Dark-Grey"
 #--------------------------------------------------------------------------------------------------#
 
 # Uninstall dolphin and related packages
-sudo pacman -Rns --noconfirm dolphin wofi vim htop dunst
+sudo pacman -Rns --noconfirm dolphin wofi nano htop dunst
 
 # Finishing touches
 sh ~/.config/DJ-hyprland/scripts/symlink.sh
