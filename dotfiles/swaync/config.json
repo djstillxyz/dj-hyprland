@@ -72,8 +72,8 @@
                     "command": "~/.config/DJ-hyprland/scripts/screenrecord-wrapper.sh"
                 },
                 {
-                    "label": "  VPN",
-                    "command": "swaync-widgets vpn"
+                    "label": "󰚰  PC-Update",
+                    "command": "~/.config/DJ-hyprland/scripts/update-wrapper.sh"
                 },
                 {
                     "label": "  Wallpaper",
