@@ -59,7 +59,7 @@ main_packages=(
     pamixer                    # dependency for clicking on waybar tools
     comic-mono                 # font used for swaylock
     noto-fonts-emoji           # emoji font
-    engrampa                   # archive manager (unzipping files, fork of file-roller)
+    file-roller                # archive manager
     aspell-en                  # english dictionary (spell checking in emacs)
     basedpyright               # lsp for emacs (better fork of pyright)
     calcurse                   # calendar
