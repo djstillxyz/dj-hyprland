@@ -23,12 +23,8 @@ Automatic bootstrapping scripts that configure a minimal Hyprland installation i
 ## Setup & Configuration
 
 ```
-curl -LO https://github.com/djstillxyz/dj-hyprland/archive/refs/heads/master.zip \
-  && unzip master.zip \
-  && mv dj-hyprland-master dj-hyprland \
-  && rm master.zip \
-  && mv dj-hyprland ~/.config/dj-hyprland \
-  && bash ~/.config/dj-hyprland/setup.sh
+  git clone https://github.com/djstillxyz/dj-hyprland.git ~/.config/dj-hyprland
+  sh ~/.config/dj-hyprland/setup.sh
 ```
 
 ## Customization
