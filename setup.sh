@@ -17,7 +17,7 @@
 #                                                 ░░░░░░   ░░░░░
 #
 #
-# DJ-hyprland by djstillxyz - https://github.com/djstillxyz
+# dj-hyprland by djstillxyz - https://github.com/djstillxyz
 #----------------------------------------------------------------------------------
 
 base_packages=(
@@ -180,8 +180,8 @@ done
 paru -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk &>> $INSTLOG
 
 ### Copy Config Files ###
-mkdir -p ~/.dotfiles && cd ~/.config/DJ-hyprland/dotfiles && cp -r * ~/.dotfiles
-chmod +x --noconfirm ~/.config/DJ-hyprland/scripts/symlink.sh && sh ~/.config/DJ-hyprland/scripts/symlink.sh && echo "dotfiles linked!"
+mkdir -p ~/.dotfiles && cd ~/.config/dj-hyprland/dotfiles && cp -r * ~/.dotfiles
+chmod +x --noconfirm ~/.config/dj-hyprland/scripts/symlink.sh && sh ~/.config/dj-hyprland/scripts/symlink.sh && echo "dotfiles linked!"
 gsettings set org.gnome.desktop.interface gtk-theme "Everforest-Light"
 gsettings set org.gnome.desktop.interface icon-theme "Zafiro-Nord-Dark-Grey"
 
@@ -250,12 +250,12 @@ doom sync
 sudo pacman -Rns --noconfirm dolphin wofi nano htop dunst
 
 # Finishing touches
-sh ~/.config/DJ-hyprland/scripts/symlink.sh
+sh ~/.config/dj-hyprland/scripts/symlink.sh
 
 # Configure screen size and wallpaper
-sh ~/.config/DJ-hyprland/scripts/monitor.sh
+sh ~/.config/dj-hyprland/scripts/monitor.sh
 
-sh ~/.config/DJ-hyprland/scripts/timezone.sh
+sh ~/.config/dj-hyprland/scripts/timezone.sh
 
 ### Script is done ###
 echo -e "$NOTE - Script had completed, reboot your system now!"

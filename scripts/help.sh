@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIG="$HOME/.config/DJ-hyprland/dotfiles/hyprland/hyprland.conf"
+CONFIG="$HOME/.config/dj-hyprland/dotfiles/hyprland/hyprland.conf"
 
 # Replace $mainMod
 mainmod="SUPER"

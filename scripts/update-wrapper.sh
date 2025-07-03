@@ -2,6 +2,6 @@
 
 TERMINAL="kitty"
 
-SCRIPT_PATH="$HOME/.config/DJ-hyprland/scripts/update.sh"
+SCRIPT_PATH="$HOME/.config/dj-hyprland/scripts/update.sh"
 
 $TERMINAL -e "$SCRIPT_PATH"

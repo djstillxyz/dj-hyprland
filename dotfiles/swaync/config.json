@@ -69,19 +69,19 @@
                 },
                 {
                     "label": "󰃼 ScreenRecord",
-                    "command": "~/.config/DJ-hyprland/scripts/screenrecord-wrapper.sh"
+                    "command": "~/.config/dj-hyprland/scripts/screenrecord-wrapper.sh"
                 },
                 {
                     "label": "󰚰  PC-Update",
-                    "command": "~/.config/DJ-hyprland/scripts/update-wrapper.sh"
+                    "command": "~/.config/dj-hyprland/scripts/update-wrapper.sh"
                 },
                 {
                     "label": "  Wallpaper",
-                    "command": "~/.config/DJ-hyprland/scripts/wallpaper.sh"
+                    "command": "~/.config/dj-hyprland/scripts/wallpaper.sh"
                 },
                 {
                     "label": " ColorPicker",
-                    "command": "~/.config/DJ-hyprland/scripts/colorpicker.sh"
+                    "command": "~/.config/dj-hyprland/scripts/colorpicker.sh"
                 }
             ]
         }
