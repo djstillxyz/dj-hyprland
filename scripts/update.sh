@@ -30,14 +30,14 @@ sudo reflector --verbose --latest 5 --download-timeout 60 --country 'United Stat
 echo -e "${YELLOW}Updating system packages...${RESET}"
 sudo pacman -Syu
 
-echo -e "${YELLOW}Updating Conda...${RESET}"
-conda update -n base conda
+# echo -e "${YELLOW}Updating Conda...${RESET}"
+# conda update -n base conda
 
 echo -e "${YELLOW}Updating AUR packages with paru...${RESET}"
 paru -Syu
 
-echo -e "${YELLOW}Updating Emacs repository...${RESET}"
-git -C ~/git/public/emacs-30/ pull
+# echo -e "${YELLOW}Updating Emacs repository...${RESET}"
+# git -C ~/git/public/emacs-30/ pull
 
 # Cleanup Commands
 echo -e "${YELLOW}Removing unused packages...${RESET}"
